@@ -41,7 +41,7 @@ public class SecurityConfig {
         http
                 .csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/app/v1/saveUser", "/app/v1/logInUser", "/app/v2/getHealth", "/api/v1/auth/**",
+                .antMatchers("v1/docker/saveUser", "v1/docker/logIn", "/app/v2/getHealth", "/api/v1/auth/**",
                         "/v3/api-docs", "/v2/api-docs", "/swagger-resources/**", "/swagger-ui/**", "/webjars/**")
                 .permitAll()
                 .antMatchers("/app/v3/addBook").authenticated()
