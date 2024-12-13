@@ -7,11 +7,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="DockerDemo" />
+        <module name="core" />
         <module name="health" />
+        <module name="DockerDemo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="core" target="1.5" />
       <module name="DockerDemo" target="17" />
       <module name="health" target="17" />
     </bytecodeTargetLevel>

@@ -11,7 +11,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @EnableAdminServer
 @OpenAPIDefinition(info = @Info(title = "docker prac", version = "v1", description = "application docker compose"))
 public class App {
+
     public static void main(String[] args) {
+
         SpringApplication.run(App.class, args);
     }
 }
